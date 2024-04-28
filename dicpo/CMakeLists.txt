@@ -2,13 +2,13 @@ cmake_minimum_required(VERSION 3.28)
 project(dicpo)
 
 set(CMAKE_CXX_STANDARD 17)
+add_compile_options(-Wall)
 
 include_directories(include)
 
 add_executable(dicpo
         src/dicpo.cpp
         src/driver.cpp
-        src/bitmap.cpp
         include/driver.h
         include/bitmap.h
         include/sfs_inode.h

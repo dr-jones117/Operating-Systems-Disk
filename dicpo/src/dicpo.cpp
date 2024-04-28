@@ -15,8 +15,8 @@
 #include <stdlib.h>
 
 
-char* read_inode_blocks(const sfs_inode_t* inode, int amount_bytes) {
-    int block_size = 128;
+char* read_inode_blocks(const sfs_inode_t* inode, size_t amount_bytes) {
+    size_t block_size = 128;
     char* data = (char*)malloc(sizeof(char) * amount_bytes);
 
     size_t current_size = 0;
